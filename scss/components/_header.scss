@@ -1,0 +1,73 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .left {
+    color: $very-dark-blue-text;
+    h1 {
+      font-size: 25px;
+      letter-spacing: 1px;
+      padding-bottom: 5px;
+    }
+    p {
+      font-size: 15px;
+    }
+  }
+
+  .right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    .mode {
+      font-size: 13px;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+      color: $dark-grayish-blue-text;
+      filter: brightness(140%);
+    }
+
+    input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    label {
+      width: 50px;
+      height: 25px;
+      position: relative;
+    }
+  }
+}
+
+.input-slider {
+  cursor: pointer;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  background-color: $toggle-light;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 11.5%;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: $white-bg;
+    transition: 0.4s;
+  }
+}
+
+.dark-slider {
+  background: $toggle-dark;
+
+  &::before {
+    left: 55%;
+    background-color: $very-dark-blue-bg;
+  }
+}
