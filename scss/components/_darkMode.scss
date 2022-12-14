@@ -1,0 +1,28 @@
+.l-mode,
+.l-mode-top {
+  color: $very-dark-blue-text;
+}
+
+.n-mode {
+  color: $white-text;
+}
+
+.n-mode-top {
+  color: $desaturated-blue-text;
+}
+
+.dark-body {
+  background-color: $very-dark-blue-bg;
+}
+
+.dark-bg {
+  background-color: $very-dark-blue-top-bg-pattern;
+}
+
+.dark-card {
+  background-color: $dark-desaturated-blue-card-bg;
+
+  &:hover {
+    background-color: $dark-card-bg-hover;
+  }
+}

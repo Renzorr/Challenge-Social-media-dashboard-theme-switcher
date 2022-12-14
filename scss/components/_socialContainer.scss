@@ -1,0 +1,30 @@
+.grid-data {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  padding-block: 50px 40px;
+}
+
+.fb-card {
+  @include socialCard($facebook);
+}
+
+.tw-card {
+  @include socialCard($twitter);
+}
+
+.yt-card {
+  @include socialCard($youtube);
+}
+
+.ig-card {
+  @include socialCard($instagram);
+}
+
+.up-txt {
+  color: $lime-green;
+}
+
+.down-txt {
+  color: $bright-red;
+}

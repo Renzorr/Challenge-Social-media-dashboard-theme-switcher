@@ -49,6 +49,14 @@ select {
   border: none;
 }
 
+section {
+  margin: 0 auto;
+  padding-top: 35px;
+  padding-inline: 50px;
+  max-width: 1200px;
+  min-height: 100vh;
+}
+
 header {
   display: flex;
   align-items: center;
@@ -116,23 +124,6 @@ header .right label {
   background-color: hsl(235deg, 16%, 14%);
 }
 
-.l-mode,
-.l-mode-top {
-  color: hsl(230deg, 17%, 14%);
-}
-
-.n-mode {
-  color: hsl(0deg, 0%, 100%);
-}
-
-.n-mode-top {
-  color: hsl(228deg, 34%, 66%);
-}
-
-.dark-body {
-  background-color: hsl(235deg, 16%, 14%);
-}
-
 .bg-rec {
   position: absolute;
   top: 0;
@@ -141,18 +132,6 @@ header .right label {
   width: 100%;
   height: 250px;
   background-color: hsl(225deg, 100%, 98%);
-}
-
-.dark-bg {
-  background-color: hsl(231deg, 24%, 17%);
-}
-
-section {
-  margin: 0 auto;
-  padding-top: 35px;
-  padding-inline: 50px;
-  max-width: 1200px;
-  min-height: 100vh;
 }
 
 .grid-data {
@@ -322,17 +301,17 @@ section {
   color: hsl(356deg, 69%, 56%);
 }
 
-h3 {
-  font-size: 24px;
-  color: hsl(230deg, 17%, 14%);
-  padding-bottom: 25px;
-}
-
 .grid-overview {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 25px;
   padding-bottom: 20px;
+}
+
+h3 {
+  font-size: 24px;
+  color: hsl(230deg, 17%, 14%);
+  padding-bottom: 25px;
 }
 
 .ovw-card {
@@ -366,6 +345,27 @@ h3 {
   font-size: 12px;
 }
 
+.l-mode,
+.l-mode-top {
+  color: hsl(230deg, 17%, 14%);
+}
+
+.n-mode {
+  color: hsl(0deg, 0%, 100%);
+}
+
+.n-mode-top {
+  color: hsl(228deg, 34%, 66%);
+}
+
+.dark-body {
+  background-color: hsl(235deg, 16%, 14%);
+}
+
+.dark-bg {
+  background-color: hsl(231deg, 24%, 17%);
+}
+
 .dark-card {
   background-color: hsl(228deg, 28%, 20%);
 }
@@ -379,6 +379,9 @@ h3 {
   }
 }
 @media (max-width: 645px) {
+  section {
+    padding-inline: 20px;
+  }
   .grid-data,
   .grid-overview {
     grid-template-columns: 1fr;
